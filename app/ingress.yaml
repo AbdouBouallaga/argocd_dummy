@@ -6,11 +6,12 @@ metadata:
     app: wills-app
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
+    traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
-      - path: /wills-app
+      - path: /willsapp
         pathType: Prefix
         backend:
           service:
