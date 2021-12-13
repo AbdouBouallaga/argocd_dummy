@@ -16,7 +16,7 @@ spec:
       - name: wills-app
         image: wil42/playground:v1
         ports:
-        - containerPort: 8080
+        - containerPort: 80
           protocol: TCP
 ---
 apiVersion: v1
@@ -28,6 +28,6 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 80
   selector:
     app: wills-app
