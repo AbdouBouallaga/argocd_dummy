@@ -20,7 +20,7 @@ spec:
           protocol: TCP
         env:
         - name: MESSAGE
-          value: Hello from app1 changed!
+          value: Hello from app1!
 ---
 apiVersion: v1
 kind: Service
