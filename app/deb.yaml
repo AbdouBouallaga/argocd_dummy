@@ -15,6 +15,9 @@ spec:
       containers:
       - name: wills-app
         image: wil42/playground:v1
+        ports:
+        - containerPort: 8888
+          protocol: TCP
 ---
 apiVersion: v1
 kind: Service
