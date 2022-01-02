@@ -14,13 +14,10 @@ spec:
     spec:
       containers:
       - name: wills-app
-        image: paulbouwer/hello-kubernetes:1.5
+        image: : wil42/playground:v1
         ports:
         - containerPort: 8080
           protocol: TCP
-        env:
-        - name: MESSAGE
-          value: Hello from app1!
 ---
 apiVersion: v1
 kind: Service
